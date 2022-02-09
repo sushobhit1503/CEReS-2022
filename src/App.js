@@ -19,6 +19,7 @@ function App() {
         <Route path='/workshop' exact element={<Workshop />} />
         <Route path='/contact' exact element={<ContactUs />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
