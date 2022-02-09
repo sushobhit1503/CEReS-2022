@@ -1,0 +1,13 @@
+.activeLine {
+    border-radius: 10px;
+    background-color: var(--blue-color);
+}
+
+.menu-contents {
+    padding: 8px;
+    margin: 0px 6px 0px 6px;
+    color: var(--yellow-color);
+    font-weight: 900;
+    width: 140px;
+    text-align: center;
+}
