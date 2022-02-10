@@ -6,6 +6,7 @@ import ACM from "../Assets/acm.png"
 import IEEE from "../Assets/ieee.png"
 import PHOENIX from "../Assets/phoenix.png"
 import CSA from "../Assets/csa.png"
+import { Input } from "reactstrap"
 
 class ContactUs extends React.Component {
     render() {
@@ -68,8 +69,19 @@ class ContactUs extends React.Component {
                     HAVE ANY QUERY?
                 </div>
                 <Bar />
-                <div style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px", marginBottom: "30px" }}>
-
+                <div style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px", margin: "30px 0px 30px 0px", padding: "10px", width: "80%", borderRadius: "10px", alignSelf: "center" }}>
+                    <div style={{ display: "flex", justifyContent: "space-between" }}>
+                        <Input placeholder="FULL NAME" style={{ width: "47%" }} type="text" />
+                        <Input placeholder="EMAIL ID" style={{ width: "47%" }} type="email" />
+                    </div>
+                    <div style={{ marginTop: "20px" }}></div>
+                    <Input rows="8" placeholder="MESSAGE" type="textarea" />
+                    <div style={{ marginTop: "20px" }}></div>
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                        <button style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600", alignSelf: "center" }}>
+                            SUBMIT QUERY
+                        </button>
+                    </div>
                 </div>
             </div>
         )
