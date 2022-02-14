@@ -10,4 +10,16 @@
     font-weight: 900;
     width: 140px;
     text-align: center;
+    text-decoration: none;
+}
+
+.menu-contents:hover {
+    color: var(--yellow-color)
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-contents {
+        font-size: 12px;
+        width: 100px;
+    }
 }

@@ -1,32 +1,30 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import Logo from "../Assets/Logo.jpg"
 import "./Toolbar.css"
 
 class Toolbar extends React.Component {
     render() {
+        const changeColor = (id) => {
+            document.getElementById("1").classList.remove("activeLine")
+            document.getElementById("2").classList.remove("activeLine")
+            document.getElementById("3").classList.remove("activeLine")
+            document.getElementById("4").classList.remove("activeLine")
+            document.getElementById("5").classList.remove("activeLine")
+            document.getElementById(id).classList.add("activeLine")
+        }
         return (
-            <div style={{ height: "125px", display: "flex", justifyContent: "space-between" }}>
+            <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px", height: "110px", display: "flex", justifyContent: "space-between", position: "fixed", width: "100%", backgroundColor: "white" }}>
                 <div>
-                    <img src={Logo} style={{ height: "125px" }} />
+                    <img src={Logo} style={{ height: "110px" }} alt="ceres" />
                 </div>
-                {/* <div style={{ display: "flex", alignSelf: "center" }}>
-                    <NavLink className="menu-contents ">
-                        HOME
-                    </NavLink>
-                    <NavLink className="menu-contents">
-                        PRESENTATION
-                    </NavLink>
-                    <NavLink className="menu-contents">
-                        SPEAKERS
-                    </NavLink>
-                    <NavLink className="menu-contents">
-                        WORKSHOP
-                    </NavLink>
-                    <NavLink className="menu-contents">
-                        CONTACT US
-                    </NavLink>
-                </div> */}
+                <div style={{ display: "flex", alignSelf: "center" }}>
+                    <Link onClick={() => changeColor(1)} id="1" to="/" className="menu-contents activeLine">HOME</Link>
+                    <Link onClick={() => changeColor(2)} id="2" to="/speaker" className="menu-contents">SPEAKERS</Link>
+                    <Link onClick={() => changeColor(3)} id="3" to="/presentation" className="menu-contents">PRESENTATION</Link>
+                    <Link onClick={() => changeColor(4)} id="4" to="/workshop" className="menu-contents">WORKSHOP</Link>
+                    <Link onClick={() => changeColor(5)} id="5" to="/contact" className="menu-contents">CONTACT US </Link>
+                </div>
             </div>
         )
     }

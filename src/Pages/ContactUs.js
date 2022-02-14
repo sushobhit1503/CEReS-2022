@@ -6,66 +6,69 @@ import ACM from "../Assets/acm.png"
 import IEEE from "../Assets/ieee.png"
 import PHOENIX from "../Assets/phoenix.png"
 import CSA from "../Assets/csa.png"
-import { Input } from "reactstrap"
+// import { Input } from "reactstrap"
 
 class ContactUs extends React.Component {
     render() {
         return (
-            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
-                <div style={{ display: "flex", justifyContent: "space-around" }}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "130px" }}>
+                <div className="land-container">
                     <div style={{ display: "flex", flexDirection: "column" }}>
-                        <div style={{ color: "var(--blue-color)", textAlign: "center", fontSize: "32px", fontWeight: "900" }} >
+                        <div className="land-heading" >
                             KNOW ABOUT ORGANIZERS
                         </div>
-                        <div style={{ color: "var(--yellow-color)", width: "400px", textAlign: "center", fontWeight: "600" }}>
-                            Lorem Ipsum
+                        <div className="land-description">
+                            CEReS is a summit born out of joint collaboration and effort between four bodies on campus -
+                            The ACM Student Chapter BITS Pilani Hyderabad,
+                            CSA - the Computer Science Association, the IEEE Student Branch
+                            BITS Pilani Hyderabad and PHoEnix - the Electronics Association.
                         </div>
                     </div>
                     <div>
-                        <img src={Contact} style={{ width: "500px" }} alt="CERES" />
+                        <img src={Contact} className="land-picture" alt="CERES" />
                     </div>
                 </div>
                 <div style={{ marginTop: "100px" }}></div>
-                <div style={{ color: "var(--blue-color)", textAlign: "center", fontSize: "32px", fontWeight: "900" }}>
+                <div className="topic-headings">
                     OUR ORGANIZERS
                 </div>
                 <Bar />
                 <div style={{ margin: "20px", display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-                    <BottomCard width="250px" height="250px">
+                    <BottomCard width="25%" height="25%">
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <img src={ACM} style={{ width: "200px", height: "200px", alignItems: "center", margin: "10px 0px 0px 0px" }} />
+                            <img alt="ceres" src={ACM} className="organiser-picture" />
                         </div>
-                        <div style={{ textAlign: "center", fontSize: "18px", fontWeight: "800", color: "var(--blue-color)" }}>
+                        <div className="organiser-text">
                             ACM - BITS HYDERABAD
                         </div>
                     </BottomCard>
-                    <BottomCard width="250px" height="250px">
+                    <BottomCard width="25%" height="25%">
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <img src={CSA} style={{ width: "200px", height: "200px", alignItems: "center", margin: "10px 0px 0px 0px" }} />
+                            <img alt="ceres" src={CSA} className="organiser-picture" />
                         </div>
-                        <div style={{ textAlign: "center", fontSize: "18px", fontWeight: "800", color: "var(--blue-color)" }}>
+                        <div className="organiser-text">
                             COMPUTER ASSOCIATION
                         </div>
                     </BottomCard>
-                    <BottomCard width="250px" height="250px">
+                    <BottomCard width="25%" height="25%">
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <img src={IEEE} style={{ width: "200px", height: "200px", alignItems: "center", margin: "10px 0px 0px 0px" }} />
+                            <img alt="ceres" src={IEEE} className="organiser-picture" />
                         </div>
-                        <div style={{ textAlign: "center", fontSize: "18px", fontWeight: "800", color: "var(--blue-color)" }}>
+                        <div className="organiser-text">
                             IEEE - BITS HYDERABAD
                         </div>
                     </BottomCard>
-                    <BottomCard width="250px" height="250px">
+                    <BottomCard width="25%" height="25%">
                         <div style={{ display: "flex", justifyContent: "center" }}>
-                            <img src={PHOENIX} style={{ width: "200px", height: "200px", alignItems: "center", margin: "10px 0px 0px 0px" }} />
+                            <img alt="ceres" src={PHOENIX} className="organiser-picture" />
                         </div>
-                        <div style={{ textAlign: "center", fontSize: "18px", fontWeight: "800", color: "var(--blue-color)" }}>
+                        <div className="organiser-text">
                             ELECTRONICS ASSOCIATION
                         </div>
                     </BottomCard>
                 </div>
-                <div style={{ marginTop: "100px" }}></div>
-                <div style={{ color: "var(--blue-color)", textAlign: "center", fontSize: "32px", fontWeight: "900" }}>
+                {/* <div style={{ marginTop: "100px" }}></div>
+                <div className="topic-headings">
                     HAVE ANY QUERY?
                 </div>
                 <Bar />
@@ -82,7 +85,7 @@ class ContactUs extends React.Component {
                             SUBMIT QUERY
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
         )
     }

@@ -18,3 +18,167 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.land-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.land-heading {
+  color: var(--blue-color);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.land-description {
+  color: var(--yellow-color);
+  width: 400px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.land-picture {
+  width: 500px;
+}
+
+.topic-headings {
+  color: var(--blue-color);
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.topic-subheadings {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--blue-color);
+}
+
+.side-card {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  height: 275px;
+  width: 400px;
+  border-left: 10px solid var(--yellow-color);
+  margin: 20px;
+}
+
+/* HOME PAGE */
+
+.topic-container {
+  width: 250px
+}
+
+.topic-image {
+  width: 250px;
+  height: 175px;
+  border-radius: 12px;
+}
+
+.topic-text {
+  color: var(--blue-color);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.spons-cards {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+
+/* CONTACT US PAGE */
+.organiser-picture {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.organiser-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--blue-color);
+}
+
+/* FOOTER COMPONENT */
+.footer-container {
+  display: flex;
+}
+
+.footer-heading {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .footer-content {
+    font-size: 13px;
+  }
+
+  .topic-image {
+    width: 175px;
+    height: 100px;
+  }
+
+  .topic-container {
+    width: 175px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .land-picture {
+    width: 400px;
+  }
+
+  .footer-content {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .organiser-text {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .side-card {
+    width: 350px;
+    height: max-content;
+  }
+
+  .side-card-content {
+    font-size: 13px;
+  }
+
+  .topic-subheadings {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .land-picture {
+    width: 250px;
+  }
+
+  .land-heading {
+    font-size: 26px;
+  }
+
+  .land-description {
+    width: 300px;
+  }
+
+  .side-card {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {}
