@@ -14,7 +14,7 @@ class Toolbar extends React.Component {
             document.getElementById(id).classList.add("activeLine")
         }
         return (
-            <div style={{ boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px", height: "110px", display: "flex", justifyContent: "space-between", position: "fixed", width: "100%", backgroundColor: "white" }}>
+            <div className="toolbar-container">
                 <div>
                     <img src={Logo} style={{ height: "110px" }} alt="ceres" />
                 </div>

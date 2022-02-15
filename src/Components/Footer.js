@@ -3,9 +3,9 @@ import React from "react"
 class Footer extends React.Component {
     render() {
         return (
-            <div style={{ display: "flex", backgroundColor: "var(--blue-color)", height: "210px", flexDirection: "column" }}>
+            <div style={{ display: "flex", backgroundColor: "var(--blue-color)", height: "max-content", flexDirection: "column" }}>
                 <div className="footer-container">
-                    <div style={{ display: "flex", flexDirection: "column", width: "35%", margin: "10px" }}>
+                    <div className="footer-spacing">
                         <div className="footer-heading">
                             ABOUT CERES
                         </div>
@@ -15,22 +15,22 @@ class Footer extends React.Component {
                             enthusiasts together to network and expand their skills.
                         </div>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
+                    <div className="footer-line">
                         <div style={{ height: "100px", border: "0.3px solid var(--yellow-color)" }}>
 
                         </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "column", width: "30%", margin: "10px" }} >
+                    <div className="footer-spacing">
                         <div className="footer-heading">
-                            FOLLOW THE ORGANIZERS
+
                         </div>
                     </div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
+                    <div className="footer-line">
                         <div style={{ height: "100px", border: "0.1px solid var(--yellow-color)" }}>
 
                         </div>
                     </div>
-                    <div style={{ display: "flex", flexDirection: "column", width: "30%", margin: "10px" }} >
+                    <div className="footer-spacing">
                         <div className="footer-heading">
                             CONTACT US
                         </div>

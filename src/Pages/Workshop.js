@@ -21,7 +21,7 @@ class Workshop extends React.Component {
                             </button>
                         </a> */}
                     </div>
-                    <div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
                         <img src={Workshops} className="land-picture" alt="CERES" />
                     </div>
                 </div>

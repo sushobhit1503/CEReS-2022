@@ -24,7 +24,7 @@ class Presentation extends React.Component {
                             </button>
                         </a>
                     </div>
-                    <div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
                         <img src={Presentations} className="land-picture" alt="CERES" />
                     </div>
                 </div>
@@ -59,7 +59,7 @@ class Presentation extends React.Component {
                         </div>
                     </SideCard>
                 </div>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center", marginBottom: "30px" }}>
+                <div className="presentation-note">
                     <div style={{ color: "var(--blue-color)", textAlign: "center", fontWeight: "600" }}>
                         <b>NOTE: </b>The format of submission is mentioned on the submission site
                     </div>

@@ -30,7 +30,7 @@ class HomePage extends React.Component {
                             workshops, presentations and exciting competitions to nurture your skills and propel you to success!
                         </div>
                     </div>
-                    <div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
                         <img src={Home} className="land-picture" alt="CERES" />
                     </div>
                 </div>

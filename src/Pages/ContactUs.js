@@ -24,7 +24,7 @@ class ContactUs extends React.Component {
                             BITS Pilani Hyderabad and PHoEnix - the Electronics Association.
                         </div>
                     </div>
-                    <div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
                         <img src={Contact} className="land-picture" alt="CERES" />
                     </div>
                 </div>

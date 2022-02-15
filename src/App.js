@@ -7,11 +7,13 @@ import Presentation from "./Pages/Presentation"
 import Workshop from "./Pages/Workshop"
 import Toolbar from "./Components/Toolbar"
 import Footer from "./Components/Footer"
+import MenuBar from "./Components/MenuBar"
 
 function App() {
   return (
     <div className="App">
       <Toolbar />
+      <MenuBar />
       <Switch>
         <Route path='/' exact component={HomePage} />
         <Route path='/presentation' exact component={Presentation} />
