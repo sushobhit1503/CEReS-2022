@@ -36,7 +36,7 @@ class Footer extends React.Component {
                         </div>
                         <div className="footer-content" style={{ color: "white", marginTop: "20px" }}>
                             <a href="mailto: ceres@hyderabad.bits-pilani.ac.in" style={{ textDecoration: "none", color: "white" }}><b>EMAIL: </b>ceres@hyderabad.bits-pilani.ac.in</a>
-                            <div style={{ marginTop: "20px" }}><b>VENUE: </b>BITS Pilani, Hyderabad Campus, Hyderabad 500078, Telanghana</div>
+                            <div style={{ marginTop: "20px" }}><b>VENUE: </b>BITS Pilani, Hyderabad Campus, Hyderabad 500078, Telangana</div>
                         </div>
                     </div>
                 </div>
