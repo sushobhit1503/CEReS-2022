@@ -16,7 +16,7 @@ class ContactUs extends React.Component {
             name: "",
             email: "",
             message: "",
-            response: "Your query has been submitted. We will get back to you soon."
+            response: ""
         }
     }
     render() {
