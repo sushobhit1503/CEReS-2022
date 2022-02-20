@@ -6,10 +6,41 @@ import ACM from "../Assets/acm.png"
 import IEEE from "../Assets/ieee.png"
 import PHOENIX from "../Assets/phoenix.png"
 import CSA from "../Assets/csa.png"
-// import { Input } from "reactstrap"
+import { Input } from "reactstrap"
+import emailjs from "@emailjs/browser"
 
 class ContactUs extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            name: "",
+            email: "",
+            message: ""
+        }
+    }
     render() {
+        const onChange = (event) => {
+            const { name, value } = event.target
+            this.setState({ [name]: value })
+        }
+        const sendEmail = (e) => {
+            e.preventDefault()
+            const { name, message } = this.state
+            let templateParams = {
+                from_name: name,
+                to_name: "ceres@hyderabad.bits-pilani.ac.in",
+                subject: "QUERY FROM CEReS 2022 Website",
+                message: message
+            }
+            emailjs.send('service_8qyy1jl', 'template_9j0g31m', templateParams, 'user_L3gJdR4R522WMBapKUxPi')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                })
+            this.setState({ name: "", email: "", message: "" })
+        }
+
         return (
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "130px" }}>
                 <div className="land-container">
@@ -67,25 +98,25 @@ class ContactUs extends React.Component {
                         </div>
                     </BottomCard>
                 </div>
-                {/* <div style={{ marginTop: "100px" }}></div>
+                <div style={{ marginTop: "100px" }}></div>
                 <div className="topic-headings">
                     HAVE ANY QUERY?
                 </div>
                 <Bar />
                 <div style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px", margin: "30px 0px 30px 0px", padding: "10px", width: "80%", borderRadius: "10px", alignSelf: "center" }}>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="FULL NAME" style={{ width: "47%" }} type="text" />
-                        <Input placeholder="EMAIL ID" style={{ width: "47%" }} type="email" />
+                        <Input name="name" value={this.state.name} onChange={onChange} placeholder="FULL NAME" style={{ width: "47%" }} type="text" />
+                        <Input name="email" value={this.state.email} onChange={onChange} placeholder="EMAIL ID" style={{ width: "47%" }} type="email" />
                     </div>
                     <div style={{ marginTop: "20px" }}></div>
-                    <Input rows="8" placeholder="MESSAGE" type="textarea" />
+                    <Input name="message" value={this.state.message} onChange={onChange} rows="8" placeholder="MESSAGE" type="textarea" />
                     <div style={{ marginTop: "20px" }}></div>
                     <div style={{ display: "flex", justifyContent: "center" }}>
-                        <button style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600", alignSelf: "center" }}>
+                        <button onClick={sendEmail} style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600", alignSelf: "center" }}>
                             SUBMIT QUERY
                         </button>
                     </div>
-                </div> */}
+                </div>
             </div>
         )
     }
