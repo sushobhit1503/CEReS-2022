@@ -25,11 +25,12 @@ class ContactUs extends React.Component {
         }
         const sendEmail = (e) => {
             e.preventDefault()
-            const { name, message } = this.state
+            const { email, name, message } = this.state
             let templateParams = {
                 from_name: name,
                 to_name: "ceres@hyderabad.bits-pilani.ac.in",
                 subject: "QUERY FROM CEReS 2022 Website",
+                from_email: email,
                 message: message
             }
             emailjs.send('service_8qyy1jl', 'template_9j0g31m', templateParams, 'user_L3gJdR4R522WMBapKUxPi')
