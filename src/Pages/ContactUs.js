@@ -15,7 +15,8 @@ class ContactUs extends React.Component {
         this.state = {
             name: "",
             email: "",
-            message: ""
+            message: "",
+            response: "Your query has been submitted. We will get back to you soon."
         }
     }
     render() {
@@ -28,16 +29,16 @@ class ContactUs extends React.Component {
             const { email, name, message } = this.state
             let templateParams = {
                 from_name: name,
-                to_name: "ceres@hyderabad.bits-pilani.ac.in",
+                to_name: "CEReS 2022",
                 subject: "QUERY FROM CEReS 2022 Website",
-                from_email: email,
+                reply_to: email,
                 message: message
             }
             emailjs.send('service_8qyy1jl', 'template_9j0g31m', templateParams, 'user_L3gJdR4R522WMBapKUxPi')
-                .then((result) => {
-                    console.log(result.text);
-                }, (error) => {
-                    console.log(error.text);
+                .then(() => {
+                    this.setState({ response: "Your query has been submitted. We will get back to you soon." })
+                }, () => {
+                    this.setState({ response: "Some error occurred. Please try again later" })
                 })
             this.setState({ name: "", email: "", message: "" })
         }
@@ -111,8 +112,12 @@ class ContactUs extends React.Component {
                     </div>
                     <div style={{ marginTop: "20px" }}></div>
                     <Input name="message" value={this.state.message} onChange={onChange} rows="8" placeholder="MESSAGE" type="textarea" />
-                    <div style={{ marginTop: "20px" }}></div>
-                    <div style={{ display: "flex", justifyContent: "center" }}>
+                    <div style={{ marginTop: "10px" }}></div>
+                    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
+                        <div style={{ fontSize: "12px", textAlign: "center", color: "grey" }}>
+                            {this.state.response}
+                        </div>
+                        <div style={{ marginTop: "10px" }}></div>
                         <button onClick={sendEmail} style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600", alignSelf: "center" }}>
                             SUBMIT QUERY
                         </button>
