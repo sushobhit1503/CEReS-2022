@@ -112,6 +112,15 @@ code {
   color: var(--blue-color);
 }
 
+/* SPEAKER COMPONENT */
+
+.speaker-picture {
+  width: 250px;
+  height: 275px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
 /* FOOTER COMPONENT */
 .footer-container {
   display: flex;

@@ -8,6 +8,7 @@ import Workshop from "./Pages/Workshop"
 import Toolbar from "./Components/Toolbar"
 import Footer from "./Components/Footer"
 import MenuBar from "./Components/MenuBar"
+import Ticket from './Pages/Ticket';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/speaker' exact component={Speaker} />
         <Route path='/workshop' exact component={Workshop} />
         <Route path='/contact' exact component={ContactUs} />
+        <Route path='/tickets' exact component={Ticket} />
       </Switch>
       <Footer />
     </div>

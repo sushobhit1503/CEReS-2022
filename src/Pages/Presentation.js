@@ -43,7 +43,7 @@ class Presentation extends React.Component {
                                 <li>Gain insight and knowledge from professionals on your own presentation and paper</li>
                                 <li>Present research papers and stand a chance to win exciting awards.</li>
                                 <li>Submit papers on a wide range of topics like IoT, AI, ML, Cyber Security and Virtual Instrumentation</li>
-                                <li>Entries accepted till 28th February, 2022. Hurry Up!</li>
+                                <li>Entries accepted till 7th March, 2022. Hurry Up!</li>
                             </ul>
                         </div>
                     </SideCard>
@@ -75,5 +75,3 @@ class Presentation extends React.Component {
 }
 
 export default Presentation
-
-// https://easychair.org/conferences/?conf=ceres2022

@@ -1,9 +1,24 @@
 import React from "react"
 import SpeakerIll from "../Assets/Speaker.png"
 import Bar from "../Components/Bar"
+import SKP from "../Assets/SKP.jpg"
+import pb from "../Assets/pb.jpg"
+import BottomCard from "../Components/BottomCard"
+import { Modal, ModalBody } from "reactstrap"
 
 class Speaker extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            name: "",
+            isOpen: false,
+            description: ""
+        }
+    }
     render() {
+        const makeModal = (name, description, image) => {
+            this.setState({ isOpen: !this.state.isOpen, name: name, description: description })
+        }
         return (
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "130px" }}>
                 <div className="land-container">
@@ -21,12 +36,44 @@ class Speaker extends React.Component {
                 </div>
                 <div style={{ marginTop: "100px" }}></div>
                 <div className="topic-headings">
+                    OUR CHIEF GUESTS
+                </div>
+                <Bar />
+                <div style={{ color: "var(--yellow-color)", textAlign: "center", fontWeight: "600", display: "flex", justifyContent: "center" }}>
+                    <BottomCard height="425px" width="300px">
+                        <img alt="ceres" src={SKP} className="speaker-picture" />
+                        <div className="topic-subheadings">
+                            PROF. SANKAR PAL
+                        </div>
+                        <div style={{ fontWeight: "400" }}>
+                            Computer Scientist, Former Director Indian Statistical Institute, Kolkata
+                        </div>
+                        {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
+                            READ MORE
+                        </div> */}
+                    </BottomCard>
+                    <BottomCard height="425px" width="300px">
+                        <img alt="ceres" src={pb} className="speaker-picture" />
+                        <div style={{ fontSize: "20px" }} className="topic-subheadings">
+                            PROF. PUSHPAK BHATTACHARYYA
+                        </div>
+                        <div style={{ fontWeight: "400" }}>
+                            Professor at CSE Department, IIT Bombay, Former Director IIT Patna
+                        </div>
+                        {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Pushpak Bhattacharyya", "")}>
+                            READ MORE
+                        </div> */}
+                    </BottomCard>
+                </div>
+                <div style={{ marginTop: "100px" }}></div>
+                <div className="topic-headings">
                     OUR SPEAKERS
                 </div>
                 <Bar />
                 <div style={{ color: "var(--yellow-color)", textAlign: "center", fontWeight: "600" }}>
                     TO BE ANNOUNCED SOON
                 </div>
+                <div style={{ marginTop: "10%" }}></div>
                 <div style={{ marginTop: "100px" }}></div>
                 <div className="topic-headings">
                     OUR PANELIST
@@ -36,6 +83,18 @@ class Speaker extends React.Component {
                     TO BE ANNOUNCED SOON
                 </div>
                 <div style={{ marginTop: "10%" }}></div>
+                <Modal isOpen={this.state.isOpen} centered toggle={() => { this.setState({ isOpen: !this.state.isOpen }) }}>
+                    <ModalBody>
+                        <div style={{ display: "flex" }}>
+                            <div style={{ display: "flex", flexDirection: "column" }}>
+                                <div className="topic-subheadings">{this.state.name}</div>
+                                <div style={{ color: "var(--yellow-color)", textAlign: "center", fontWeight: "600", display: "flex", justifyContent: "center" }}>
+                                    {this.state.description}
+                                </div>
+                            </div>
+                        </div>
+                    </ModalBody>
+                </Modal>
             </div>
         )
     }
