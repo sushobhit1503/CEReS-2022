@@ -16,9 +16,9 @@ class Speaker extends React.Component {
         }
     }
     render() {
-        const makeModal = (name, description, image) => {
-            this.setState({ isOpen: !this.state.isOpen, name: name, description: description })
-        }
+        // const makeModal = (name, description, image) => {
+        //     this.setState({ isOpen: !this.state.isOpen, name: name, description: description })
+        // }
         return (
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "130px" }}>
                 <div className="land-container">
@@ -27,7 +27,8 @@ class Speaker extends React.Component {
                             SPEAKER TAGLINE
                         </div>
                         <div className="land-description">
-                            COMING SOON
+                            If you’ve ever wanted to gain a deeper perspective on the field of research, then look no further. As veterans in their fields, our line-up of speakers will be able to shine light on various topics and provide insightful counsel.
+                            Wisdom begets wisdom, and at CEReS 2022, we are proud to be hosting some of the foremost minds in the sphere of research and academia.
                         </div>
                     </div>
                     <div>
