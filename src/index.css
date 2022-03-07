@@ -275,6 +275,10 @@ code {
     text-align: center;
     flex-direction: column;
   }
+
+  .organiser-text {
+    font-size: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
