@@ -121,6 +121,10 @@ code {
   border-radius: 10px;
 }
 
+.change {
+  flex-direction: row;
+}
+
 /* FOOTER COMPONENT */
 .footer-container {
   display: flex;
@@ -236,6 +240,11 @@ code {
 
   .presentation-note {
     flex-direction: column;
+  }
+
+  .change {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

@@ -40,7 +40,7 @@ class Speaker extends React.Component {
                     OUR CHIEF GUESTS
                 </div>
                 <Bar />
-                <div style={{ color: "var(--yellow-color)", textAlign: "center", fontWeight: "600", display: "flex", justifyContent: "center" }}>
+                <div className="change" style={{ color: "var(--yellow-color)", textAlign: "center", fontWeight: "600", display: "flex", justifyContent: "center" }}>
                     <BottomCard height="425px" width="300px">
                         <img alt="ceres" src={SKP} className="speaker-picture" />
                         <div className="topic-subheadings">
