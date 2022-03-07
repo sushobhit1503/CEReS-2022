@@ -1,7 +1,6 @@
 import React from "react"
 import { Input, Label } from "reactstrap"
 import Bar from "../Components/Bar"
-import axios from "axios"
 
 class Ticket extends React.Component {
     constructor() {
