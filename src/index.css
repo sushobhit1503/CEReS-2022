@@ -166,8 +166,8 @@ code {
 }
 
 @media only screen and (max-width: 1000px) {
-  .land-picture {
-    width: 400px;
+  .ticket-picture {
+    width: 350px;
   }
 
   .footer-content {
@@ -186,6 +186,10 @@ code {
     height: max-content;
   }
 
+  .ticket-picture {
+    width: 275px;
+  }
+
   .side-card-content {
     font-size: 13px;
   }
@@ -199,6 +203,14 @@ code {
   .land-picture {
     width: 250px;
     align-content: center;
+  }
+
+  .ticket-picture {
+    width: 200px;
+  }
+
+  .alignment {
+    flex-direction: column;
   }
 
   .land-heading {

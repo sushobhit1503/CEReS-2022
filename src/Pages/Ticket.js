@@ -36,7 +36,7 @@ class Ticket extends React.Component {
                         </div>
                         <div style={{ display: "flex", flexDirection: "column", margin: "30px" }}>
                             <div className="topic-subheadings" style={{ textAlign: "start" }}>PAPER PRESENTATION FEE</div>
-                            <div style={{ display: "flex" }}>
+                            <div className="alignment" style={{ display: "flex" }}>
                                 <div className="land-description" style={{ fontSize: "12px", textAlign: "start" }}>
                                     CEReS is a two day research summit with eminent speakers who will give insight
                                     into their field, workshops, competitions and exhibitions.
@@ -45,7 +45,7 @@ class Ticket extends React.Component {
                                     members of IEEE and ACM and students of BITS Pilani Hyderabad Campus!
                                 </div>
                                 <div>
-                                    <button style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "5px", width: "100px", borderRadius: "10px", color: "white", fontWeight: "600", marginLeft: "40px", alignSelf: "center" }}>
+                                    <button style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "5px", width: "100px", borderRadius: "10px", color: "white", fontWeight: "600", marginTop: "40px", alignSelf: "center" }}>
                                         <a href="https://rzp.io/l/WWTg9WjE" style={{ textDecoration: "none", color: "white" }}>
                                             SELECT
                                         </a>
@@ -55,7 +55,7 @@ class Ticket extends React.Component {
                         </div>
                         <div style={{ display: "flex", flexDirection: "column", margin: "30px" }}>
                             <div className="topic-subheadings" style={{ textAlign: "start" }}>RESEARCH SUMMIT FEE</div>
-                            <div style={{ display: "flex" }}>
+                            <div className="alignment" style={{ display: "flex" }}>
                                 <div className="land-description" style={{ fontSize: "12px", textAlign: "start" }}>
                                     CEReS is a two day research summit with eminent speakers who will give insight
                                     into their field, workshops, competitions and exhibitions.
@@ -64,7 +64,7 @@ class Ticket extends React.Component {
                                     members of IEEE and ACM and students of BITS Pilani Hyderabad Campus!
                                 </div>
                                 <div>
-                                    <button style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "5px", width: "100px", borderRadius: "10px", color: "white", fontWeight: "600", marginLeft: "40px", alignSelf: "center" }}>
+                                    <button style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "5px", width: "100px", borderRadius: "10px", color: "white", fontWeight: "600", marginTop: "30px", alignSelf: "center" }}>
                                         <a href="https://rzp.io/l/uXfLZoyZO" style={{ textDecoration: "none", color: "white" }}>
                                             SELECT
                                         </a>
@@ -85,7 +85,7 @@ class Ticket extends React.Component {
                         <div className="topic-subheadings" style={{ fontSize: "20px", marginBottom: "10px", fontWeight: "600", textAlign: "end" }}>Total: Rs. {this.state.price}</div>
                     </div> */}
                     <div style={{ display: "flex", alignItems: "center" }}>
-                        <img src={Tickets} className="land-picture" alt="CERES" />
+                        <img src={Tickets} className="ticket-picture" alt="CERES" />
                     </div>
                 </div>
             </div>
