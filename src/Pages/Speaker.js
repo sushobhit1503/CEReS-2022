@@ -93,7 +93,7 @@ class Speaker extends React.Component {
                     <BottomCard height="400px" width="275px">
                         <img alt="ceres" src={AB} className="speaker-picture" />
                         <div className="topic-subheadings">
-                            DR. ANAND BHATT
+                            DR. ANANT BHATT
                         </div>
                         <div style={{ fontWeight: "400" }}>
                             CTO, Centre of excellence for artificial intelligence, Govt. of India
