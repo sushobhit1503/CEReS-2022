@@ -53,7 +53,7 @@ class Speaker extends React.Component {
                             PROF. SANKAR PAL
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            Computer Scientist, Former Director Indian Statistical Institute, Kolkata
+                            COMPUTER SCIENTIST, FORMER DIRECTOR INDIAN STATISTICAL INSTITUTE, KOLKATA
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
@@ -65,7 +65,7 @@ class Speaker extends React.Component {
                             PROF. PUSHPAK BHATTACHARYYA
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            Professor at CSE Department, IIT Bombay, Former Director IIT Patna
+                            PROFESSOR CSE DEPT., IIT BOMBAY, FORMER DIRECTOR IIT PATNA
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Pushpak Bhattacharyya", "")}>
                             READ MORE
@@ -84,7 +84,7 @@ class Speaker extends React.Component {
                             MR. DIGBIJOY NATH
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            Co Founder, AGNIT Semiconductors, Associate Professor IISc
+                            CO FOUNDER, AGNIT SEMICONDUCTORS, ASSOCIATE PROFESSOR IISc
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
@@ -96,7 +96,7 @@ class Speaker extends React.Component {
                             DR. ANANT BHATT
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            CTO, Centre of excellence for artificial intelligence, Govt. of India
+                            CTO, CENTRE OF EXCELLENCE FOR ARTIFICIAL INTELLIGENCE, GOVT. OF INDIA
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
@@ -108,7 +108,7 @@ class Speaker extends React.Component {
                             MR. NISHITH PATHAK
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            Microsoft regional director, author of AI books.
+                            MICROSOFT REGIONAL DIRECTOR, AUTHOR OF AI BOOKS.
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
@@ -120,7 +120,7 @@ class Speaker extends React.Component {
                             DR. PARIKSHIT SAHATIYA
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            Associate editor for nature scientific reports. Wearable Electronics expert
+                            ASSOCIATE EDITOR FOR NATURE SCIENTIFIC REPORTS. WEARABLE ELECTRONICS EXPERT
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
@@ -140,7 +140,7 @@ class Speaker extends React.Component {
                             DR. DAVE CHATTERJEE
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            Author of "CyberSecurity Readiness", Professor at University of Georgia
+                            AUTHOR OF "CYBERSECURITY READINESS", PROFESSOR AT UNIVERSITY OF GEORGIA
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
@@ -152,7 +152,7 @@ class Speaker extends React.Component {
                             MR. UTSAV MITTAL
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            CEO, Founder of Xiarch, Founded ISSCC's Delhi Chapter
+                            CEO, FOUNDER OF XIARCH, FOUNDED ISSCC's DELHI CHAPTER
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
