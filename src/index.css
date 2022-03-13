@@ -125,6 +125,10 @@ code {
   flex-direction: row;
 }
 
+.change1 {
+  flex-wrap: wrap;
+}
+
 /* FOOTER COMPONENT */
 .footer-container {
   display: flex;

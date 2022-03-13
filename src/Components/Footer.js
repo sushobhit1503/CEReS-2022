@@ -10,7 +10,7 @@ class Footer extends React.Component {
                             ABOUT CERES
                         </div>
                         <div className="footer-content" style={{ textAlign: "center", color: "white", marginTop: "10px" }}>
-                            CERes is a two day Computer and Electronics Research Summit organized by BITS Pilani Hyderabad
+                            CEReS is a two day Computer and Electronics Research Summit organized by BITS Pilani Hyderabad
                             to spread awareness on research opportunities and brings experienced speakers and aspiring
                             enthusiasts together to network and expand their skills.
                         </div>
