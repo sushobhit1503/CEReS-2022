@@ -6,7 +6,7 @@ import pb from "../Assets/pb.jpg"
 import DN from "../Assets/DN.JPG"
 import AB from "../Assets/AB.jpg"
 import PS from "../Assets/PS.jfif"
-import NP from "../Assets/NP.JPG"
+import NP from "../Assets/NP.jpg"
 import DC from "../Assets/DC.jpg"
 import UM from "../Assets/UM.png"
 import BottomCard from "../Components/BottomCard"
@@ -103,18 +103,6 @@ class Speaker extends React.Component {
                         </div> */}
                     </BottomCard>
                     <BottomCard height="400px" width="275px">
-                        <img alt="ceres" src={NP} className="speaker-picture" />
-                        <div style={{ fontSize: "23px" }} className="topic-subheadings">
-                            MR. NISHITH PATHAK
-                        </div>
-                        <div style={{ fontWeight: "400" }}>
-                            MICROSOFT REGIONAL DIRECTOR, AUTHOR OF AI BOOKS.
-                        </div>
-                        {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
-                            READ MORE
-                        </div> */}
-                    </BottomCard>
-                    <BottomCard height="400px" width="275px">
                         <img alt="ceres" src={PS} className="speaker-picture" />
                         <div style={{ fontSize: "20px" }} className="topic-subheadings">
                             DR. PARIKSHIT SAHATIYA
@@ -126,6 +114,19 @@ class Speaker extends React.Component {
                             READ MORE
                         </div> */}
                     </BottomCard>
+                    <BottomCard height="400px" width="275px">
+                        <img alt="ceres" src={NP} className="speaker-picture" />
+                        <div style={{ fontSize: "23px" }} className="topic-subheadings">
+                            DR. SUVADIP BATABYAL
+                        </div>
+                        <div style={{ fontWeight: "400" }}>
+                            RECIPIENT OF UGC-BSR FELLOWSHIP, TUBITAK VISITING SCIENTIST FELLOWSHIP
+                        </div>
+                        {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
+                            READ MORE
+                        </div> */}
+                    </BottomCard>
+
                 </div>
                 <div style={{ marginTop: "10%" }}></div>
                 <div className="topic-headings">
@@ -152,7 +153,19 @@ class Speaker extends React.Component {
                             MR. UTSAV MITTAL
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            CEO, FOUNDER OF XIARCH, FOUNDED ISSCC's DELHI CHAPTER
+                            CEO, FOUNDER OF XIARCH, PRESIDENT ISC2 - DELHI
+                        </div>
+                        {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
+                            READ MORE
+                        </div> */}
+                    </BottomCard>
+                    <BottomCard height="425px" width="300px">
+                        <img alt="ceres" src={UM} className="speaker-picture" />
+                        <div style={{ fontSize: "20px" }} className="topic-subheadings">
+                            MR. UTSAV MITTAL
+                        </div>
+                        <div style={{ fontWeight: "400" }}>
+                            CEO, FOUNDER OF XIARCH, PRESIDENT ISC2 - DELHI
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
