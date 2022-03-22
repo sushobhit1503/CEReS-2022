@@ -6,9 +6,10 @@ import pb from "../Assets/pb.jpg"
 import DN from "../Assets/DN.JPG"
 import AB from "../Assets/AB.jpg"
 import PS from "../Assets/PS.jfif"
-import NP from "../Assets/NP.jpg"
+import SB from "../Assets/SB.jpg"
 import DC from "../Assets/DC.jpg"
 import UM from "../Assets/UM.png"
+import KG from "../Assets/KG.jpeg"
 import BottomCard from "../Components/BottomCard"
 import { Modal, ModalBody } from "reactstrap"
 
@@ -115,7 +116,7 @@ class Speaker extends React.Component {
                         </div> */}
                     </BottomCard>
                     <BottomCard height="400px" width="275px">
-                        <img alt="ceres" src={NP} className="speaker-picture" />
+                        <img alt="ceres" src={SB} className="speaker-picture" />
                         <div style={{ fontSize: "23px" }} className="topic-subheadings">
                             DR. SUVADIP BATABYAL
                         </div>
@@ -160,12 +161,12 @@ class Speaker extends React.Component {
                         </div> */}
                     </BottomCard>
                     <BottomCard height="425px" width="300px">
-                        <img alt="ceres" src={UM} className="speaker-picture" />
+                        <img alt="ceres" src={KG} className="speaker-picture" />
                         <div style={{ fontSize: "20px" }} className="topic-subheadings">
-                            MR. UTSAV MITTAL
+                            MR. KANISHK GAUR
                         </div>
                         <div style={{ fontWeight: "400" }}>
-                            CEO, FOUNDER OF XIARCH, PRESIDENT ISC2 - DELHI
+                            RENOWNED CYBER SECURITY EXPERT, CHEVENING COMMONWEALTH FELLOW, FOUNDER OF "INDIA FUTURE FOUNDATION"
                         </div>
                         {/* <div style={{ cursor: "pointer" }} onClick={() => makeModal("Prof. Sankar Pal", "")}>
                             READ MORE
