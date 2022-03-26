@@ -152,6 +152,11 @@ code {
   margin: 10px;
 }
 
+/* SCHEDULE */
+
+.activeDate {
+  border-bottom: 5px solid var(--yellow-color);
+}
 
 @media only screen and (max-width: 1100px) {
   .footer-content {

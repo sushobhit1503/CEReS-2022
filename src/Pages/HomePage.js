@@ -12,10 +12,24 @@ import Wearable from "../Assets/Wear.jpg"
 import Nano from "../Assets/Nano.jpg"
 import Semi from "../Assets/Semi.jpg"
 import Sensor from "../Assets/Sensor.png"
+import Schedule from "../Components/Schedule.json"
 import "./HomePage.css"
+import ScheduleLine from "../Components/ScheduleLine"
 
 class HomePage extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            day: 1
+        }
+    }
     render() {
+        const changeDate1 = () => {
+            this.setState({ day: 0 })
+        }
+        const changeDate2 = () => {
+            this.setState({ day: 1 })
+        }
         return (
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingTop: "130px" }}>
                 <div className="land-container">
@@ -169,9 +183,21 @@ class HomePage extends React.Component {
                     SCHEDULE
                 </div>
                 <Bar />
-                <div style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px", margin: "30px 0px 30px 0px", padding: "10px", width: "80%", borderRadius: "10px", display: "flex", flexDirection: "column", justifyContent: "center", alignSelf: "center", textAlign: "center", color: "var(--yellow-color)", fontWeight: "400" }}>
-                    TO BE ANNOUNCED SOON
+                <div style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px", margin: "30px 0px 30px 0px", padding: "10px", width: "max-content", borderRadius: "10px", display: "flex", flexDirection: "column", justifyContent: "center", alignSelf: "center", textAlign: "center", color: "var(--yellow-color)", fontWeight: "400" }}>
+                    <div style={{ display: "flex" }}>
+                        <div onClick={changeDate1} className={this.state.day === 0 ? `activeDate` : null} style={{ width: "50%", color: "var(--blue-color)", fontWeight: "600", cursor: "pointer" }}>DAY 1</div>
+                        <div className={this.state.day === 1 ? "activeDate" : null} onClick={changeDate2} style={{ width: "50%", color: "var(--blue-color)", fontWeight: "600", cursor: "pointer" }}>DAY 2</div>
+                        <div style={{ borderBottom: "1px solid #909090" }}></div>
+                    </div>
+                    <div>
+                        {Schedule[this.state.day].map(each => {
+                            return (
+                                <ScheduleLine each={each} />
+                            )
+                        })}
+                    </div>
                 </div>
+
                 <div style={{ marginTop: "8%" }}></div>
                 {/* <div className="topic-headings">
                     OUR SPONSORS

@@ -1,0 +1,96 @@
+[
+    [
+        {
+            "name": "INAUGURATION",
+            "time": "09:30 - 10:00",
+            "speaker": ""
+        },
+        {
+            "name": "CHIEF GUEST",
+            "time": "10:00 - 10:30",
+            "speaker": "Prof. Pushpak Bhattacharya"
+        },
+        {
+            "name": "CHIEF GUEST",
+            "time": "10:30 - 11:00",
+            "speaker": "Prof. Sankar Kumar Pal"
+        },
+        {
+            "name": "WEARABLE ELECTRONICS",
+            "time": "11:00 - 11:45",
+            "speaker": "Prof. Parikshit Sahitya"
+        },
+        {
+            "name": "INTRODUCTION TO RESEARCH WORKSHOP SESSION 1",
+            "time": "12:00 - 13:00",
+            "speaker": "Prof. John Augustine"
+        },
+        {
+            "name": "LUNCH BREAK",
+            "time": "13:00 - 14:00",
+            "speaker": ""
+        },
+        {
+            "name": "INTRODUCTION TO RESEARCH WORKSHOP SESSION 2",
+            "time": "14:00 - 15:00",
+            "speaker": "Prof. John Augustine"
+        },
+        {
+            "name": "AI & ML SESSION",
+            "time": "15:00 - 15:45",
+            "speaker": "Mr. Anant Bhatt"
+        },
+        {
+            "name": "NETWORKING SESSION",
+            "time": "15:45 - 16:15",
+            "speaker": "Mr. Anant Bhatt"
+        },
+        {
+            "name": "SEMICONDUCTOR DEVICES SESSION",
+            "time": "16:15 - 17:00",
+            "speaker": "Prof. Digbijoy Nath"
+        },
+        {
+            "name": "EDGE COMPUTING SESSION",
+            "time": "17:00 - 17:45",
+            "speaker": "Dr. Suvadip Butabyal"
+        }
+    ],
+    [
+        {
+            "name": "PAPER PRESENTATION",
+            "time": "09:30 - 13:00",
+            "speaker": ""
+        },
+        {
+            "name": "LUNCH BREAK",
+            "time": "13:00 - 14:00",
+            "speaker": ""
+        },
+        {
+            "name": "VIRTUAL INSTRUMENTATION SESSION 1",
+            "time": "14:00 - 15:30",
+            "speaker": "Mr. Vijay Kumar"
+        },
+        {
+            "name": "BREAK",
+            "time": "15:30 - 15:45",
+            "speaker": ""
+        },
+        {
+            "name": "VIRTUAL INSTRUMENTATION SESSION 2",
+            "time": "15:45 - 16:45",
+            "speaker": "Mr. Vijay Kumar"
+        },
+        {
+            "name": "CYBER SECURITY PANEL DISCUSSION",
+            "time": "17:00 - 18:30",
+            "speaker": "Dr. Dave Chatterjee, Mr. Utsav Mittal, Mr. Kanishk Gaur"
+        },
+        {
+            "name": "CLOSING CEREMONY",
+            "time": "18:30 - 19:00",
+            "speaker": ""
+        }
+    ]
+]

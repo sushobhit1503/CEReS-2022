@@ -52,6 +52,7 @@ class Workshop extends React.Component {
                             <ul>
                                 <li>In this workshop you’ll get to dabble with different kinds of simulation tools. </li>
                                 <li>Your active participation here will be invaluable and will bolster your prowess in the variety of topics covered in this summit. </li>
+                                <li>Get hands-on experience along with theoritical knowledge</li>
                             </ul>
                         </div>
                     </SideCard>
