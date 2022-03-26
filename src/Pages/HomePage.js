@@ -20,7 +20,7 @@ class HomePage extends React.Component {
     constructor() {
         super()
         this.state = {
-            day: 1
+            day: 0
         }
     }
     render() {
