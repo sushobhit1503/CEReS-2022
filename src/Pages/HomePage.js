@@ -43,6 +43,11 @@ class HomePage extends React.Component {
                             Come on board and learn the ABCs of Research with brilliant research speakers,
                             workshops, presentations and exciting competitions to nurture your skills and propel you to success!
                         </div>
+                        <a href="/instructions" rel="noreferrer" style={{ textDecoration: "none", alignSelf: "center", marginTop: "20px" }}>
+                            <button style={{ cursor: "pointer", border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600" }}>
+                                REGISTER NOW
+                            </button>
+                        </a>
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <img src={Home} className="land-picture" alt="CERES" />

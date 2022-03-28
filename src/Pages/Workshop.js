@@ -15,11 +15,11 @@ class Workshop extends React.Component {
                         <div className="land-description">
                             You’re in the right place if you’re looking for an opportunity to connect with experts and your peers to explore different topics and expand your practical knowledge! Both of our workshops are designed to get you the most out of this summit with active collaboration, where you’ll spend a good part of your time putting your skills to use.
                         </div>
-                        {/* <a href="https://easychair.org/cfp/CEReS2022" target="_blank" style={{ textDecoration: "none", alignSelf: "center", marginTop: "20px" }}>
-                            <button disabled={true} style={{ border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600" }}>
-                                REGISTERATION COMING SOON
+                        <a href="/instructions" rel="noreferrer" style={{ textDecoration: "none", alignSelf: "center", marginTop: "20px" }}>
+                            <button style={{ cursor: "pointer", border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600" }}>
+                                REGISTER NOW
                             </button>
-                        </a> */}
+                        </a>
                     </div>
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <img src={Workshops} className="land-picture" alt="CERES" />

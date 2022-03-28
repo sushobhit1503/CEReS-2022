@@ -37,6 +37,11 @@ class Speaker extends React.Component {
                             If you’ve ever wanted to gain a deeper perspective on the field of research, then look no further. As veterans in their fields, our line-up of speakers will be able to shine light on various topics and provide insightful counsel.
                             Wisdom begets wisdom, and at CEReS 2022, we are proud to be hosting some of the foremost minds in the sphere of research and academia.
                         </div>
+                        <a href="/instructions" rel="noreferrer" style={{ textDecoration: "none", alignSelf: "center", marginTop: "20px" }}>
+                            <button style={{ cursor: "pointer", border: "none", outline: "none", backgroundColor: "var(--blue-color)", padding: "10px", width: "max-content", borderRadius: "10px", color: "white", fontWeight: "600" }}>
+                                REGISTER NOW
+                            </button>
+                        </a>
                     </div>
                     <div>
                         <img src={SpeakerIll} className="land-picture" alt="CERES" />

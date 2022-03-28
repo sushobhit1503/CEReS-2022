@@ -10,6 +10,7 @@ import Footer from "./Components/Footer"
 import MenuBar from "./Components/MenuBar"
 import Ticket from './Pages/Ticket';
 import Success from "./Pages/Success"
+import Instructions from './Pages/Instructions';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path='/contact' exact component={ContactUs} />
         <Route path='/tickets' exact component={Ticket} />
         <Route path='/success' exact component={Success} />
+        <Route path='/instructions' exact component={Instructions} />
       </Switch>
       <Footer />
     </div>
